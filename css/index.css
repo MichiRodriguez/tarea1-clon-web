@@ -30,8 +30,6 @@
     --sombra-hover: 0 6px 24px rgba(0, 0, 0, 0.18);
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -67,14 +65,14 @@ figure {
     margin: 0;
 }
 
-
 .contenedor {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 var(--espacio-m);
 }
 
-/* */
+/* una clase le gana a un elemento, así que .enlace-falso le gana a "a" y pone el azul */
+
 .enlace-falso {
     color: #1a5fb4;
     cursor: pointer;
@@ -83,12 +81,13 @@ figure {
     text-decoration: none;
 }
 
+/* el :hover agrega una condición extra, entonces gana y cambia el color solo al pasar el mouse */
+
 .enlace-falso:hover {
     color: var(--color-destacado);
     text-decoration: underline;
 }
 
-/* inicio de encabezado y pie de página */
 .encabezado {
     background-color: var(--color-primario);
     color: #fff;
@@ -105,9 +104,6 @@ figure {
     justify-content: space-between;
     gap: var(--espacio-m);
 }
-
-
-
 
 .marca {
     font-family: var(--fuente-titulo);
@@ -135,7 +131,8 @@ figure {
     transition: color 0.2s, border-color 0.2s;
 }
 
-/*  */
+/* el :hover agrega una condición extra, entonces gana y pone el color blanco solo al pasar el mouse */
+
 .nav-item:hover {
     color: #fff;
     border-bottom-color: var(--color-destacado);
@@ -201,7 +198,7 @@ figure {
     transform: scale(1.05);
 }
 
-/* */
+/* dos clases juntas pesan más que una sola, entonces gana y pone el gradiente oscuro encima de la imagen */
 
 .tarjeta--overlay .tarjeta__cuerpo {
     position: absolute;
@@ -241,7 +238,7 @@ figure {
     color: #fff;
 }
 
-/* */
+/* pesan igual que .etiqueta pero vienen después, y el último en llegar gana, así cada una pone su propio color de fondo */
 
 .etiqueta--lifestyle { background-color: var(--color-lifestyle); }
 .etiqueta--salud     { background-color: var(--color-salud);     }
@@ -324,7 +321,7 @@ figure {
     margin-bottom: var(--espacio-s);
 }
 
-/*  */
+/* dos clases pesan más que una, entonces gana y achica el título solo en los posts chicos sin tocar el título del post grande */
 
 .post--chico .post__titulo {
     font-size: 1rem;
@@ -357,7 +354,6 @@ figure {
     color: #fff;
 }
 
-/* inicio barra lateral */
 .barra-lat {
     display: flex;
     flex-direction: column;
@@ -405,7 +401,7 @@ label {
     color: var(--color-suave);
 }
 
-/*  */
+/* una clase le gana a un elemento, entonces .campo-input le gana a "input" y aplica el padding y borde que queremos */
 
 .campo-input {
     width: 100%;
@@ -497,10 +493,7 @@ label {
     font-size: 0.76rem;
     color: var(--color-suave);
 }
-/* fin barra lateral */
 
-
-/* inicio pie de página */
 .pie {
     background-color: var(--color-primario);
     color: rgba(255, 255, 255, 0.65);
@@ -532,8 +525,6 @@ label {
     gap: var(--espacio-m);
 }
 
-/* */
-
 .pie .enlace-falso {
     color: rgba(255, 255, 255, 0.65);
     font-size: 0.82rem;
@@ -544,11 +535,10 @@ label {
     color: #fff;
     text-decoration: underline;
 }
-/* fin pie de página */
 
 
 
-/* inicio de responsive */
+
 @media only screen and (max-width: 900px) {
     .diseno-grilla {
         grid-template-columns: 1fr;
@@ -591,4 +581,3 @@ label {
         font-size: 1.4rem;
     }
 }
-/* fin de responsive */
