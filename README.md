@@ -6,7 +6,7 @@
 ---
 
 ## Screenshot del sitio original
-![original](src/assets/images/SS-original.png)
+![original](src/assets/images/ss-original.png)
 
 ## Screenshot deL CLON
-![clon](src/assets/images/SS-clon.png)
+![clon](src/assets/images/ss-clon.png)
