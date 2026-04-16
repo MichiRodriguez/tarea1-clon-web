@@ -14,7 +14,7 @@
   </head>
   <body>
 
-      <!-- inicio de encabezado y pie de página -->
+    <!-- encabezado y pie de pagina -->
     <header class="encabezado">
       <div class="contenedor enc-interior">
         <span class="marca">TheBlog</span>
@@ -31,7 +31,6 @@
         <button class="btn-buscar" aria-label="Buscar">&#9906;</button>
       </div>
     </header>
-     
     <footer class="pie">
       <div class="contenedor pie-interior">
         <p class="pie-marca">TheBlog</p>
@@ -43,19 +42,18 @@
         </nav>
       </div>
     </footer>
-    <!-- fin de encabezado y pie de página -->
+
 
     <main>
 
-        
+      <!-- las 3 tarjetas de arriba -->
       <section class="sec-tarjetas" aria-label="Artículos destacados">
-        <!-- inicio tres cuadros del inicio grandes -->
         <div class="contenedor rejilla-tarjetas">
 
           <article class="tarjeta tarjeta--overlay">
             <figure class="tarjeta__fig">
               <img src="assets/images/liberia-img1.jpg"
-                   alt="Liberia"
+                   alt="Libe"
                    loading="lazy" />
             </figure>
             <div class="tarjeta__cuerpo">
@@ -81,7 +79,7 @@
           <article class="tarjeta tarjeta--overlay">
             <figure class="tarjeta__fig">
               <img src="assets/images/nintendo-img3.jpg"
-                   alt="Nintendo ds"
+                   alt="ds"
                    loading="lazy" />
             </figure>
             <div class="tarjeta__cuerpo">
@@ -90,16 +88,17 @@
               <p class="tarjeta__sub">Game Play</p>
             </div>
           </article>
-        <!-- fin tres cuadros del inicio grandes -->
+
         </div>
       </section>
 
+      <!-- lo de la izquierda -->
       <section class="sec-principal" aria-label="Contenido principal">
         <div class="contenedor diseno-grilla">
 
-          
+          <!-- articulo grande y articulos chicos -->
           <div class="col-articulos">
-            <!-- inicio articulo grande -->
+
             <article class="post post--grande">
               <figure class="post__fig">
                 <img src="assets/images/parque-img4.jpg"
@@ -121,15 +120,14 @@
               </p>
               <a class="enlace-falso">Continue Reading ↗</a>
             </article>
-             <!-- fin articulo grande -->
 
-              
+            
             <div class="rejilla-posts">
-            <!-- inicio artículos pequeños -->
+
               <article class="post post--chico">
                 <figure class="post__fig">
                   <img src="assets/images/coco-img5.jpg"
-                       alt="Playas de Coco"
+                       alt="Playa de Coco"
                        loading="lazy" />
                 </figure>
                 <h3 class="post__titulo">Time for the Beach and Friends</h3>
@@ -151,7 +149,7 @@
               <article class="post post--chico">
                 <figure class="post__fig">
                   <img src="assets/images/jugando-img7.jpg"
-                       alt="Niños jugando"
+                       alt="Niños jugando al aire libre"
                        loading="lazy" />
                 </figure>
                 <h3 class="post__titulo">Take Me Back in Time</h3>
@@ -162,14 +160,14 @@
               <article class="post post--chico">
                 <figure class="post__fig">
                   <img src="assets/images/power-img8.jpg"
-                       alt="gimnasio"
+                       alt="gimnasio "
                        loading="lazy" />
                 </figure>
                 <h3 class="post__titulo">Here are the Best Ways to Train</h3>
                 <p class="post__resumen">Learn about the best ways to train to get the most of your workout…</p>
                 <a class="enlace-falso">Continue Reading ↗</a>
               </article>
-                <!-- fin artículos pequeños -->
+
             </div>
 
             <div class="caja-mas">
@@ -178,14 +176,10 @@
 
           </div>
 
-
-
-
-
-          //inicio de elementos en la barra lateral
+          <!-- Barra de la derecga -->
           <aside class="barra-lat" aria-label="Barra lateral">
 
-            //incio espacio de suscripción
+            <!-- lo de suscribir -->
             <div class="widget widget--boletin">
               <h3 class="widget__titulo">Subscribe to our Newsletter</h3>
               <p class="widget__sub">No Spam. Only one email per week.</p>
@@ -209,9 +203,7 @@
                 <button type="submit" class="btn-suscribir">Subscribe</button>
               </form>
             </div>
-            //fin espacio de suscripción
 
-            //inciio espacio de categorías
             <div class="widget widget--cats">
               <h3 class="widget__titulo">Categories</h3>
               <ul class="lista-cats">
@@ -223,16 +215,14 @@
                 <li><a class="enlace-falso">Business</a><span class="cat-num">28</span></li>
               </ul>
             </div>
-            //fin espacio de categorías
 
-            //inicio de post en cuadros de esa barra abajo
             <div class="widget widget--recientes">
               <h3 class="widget__titulo">Recent Posts</h3>
               <ul class="lista-recientes">
 
                 <li class="rec-item">
                   <img src="assets/images/rio-img9.jpg"
-                       alt="Río Tárcoles"
+                       alt="Río celeste"
                        class="rec-item__img" loading="lazy" />
                   <div>
                     <a class="rec-item__titulo enlace-falso">Top Destinations to Visit in the World</a>
@@ -242,7 +232,7 @@
 
                 <li class="rec-item">
                   <img src="assets/images/realidad-img10.jpg"
-                       alt="realidad virtual"
+                       alt="gafas de realidad virtual "
                        class="rec-item__img" loading="lazy" />
                   <div>
                     <a class="rec-item__titulo enlace-falso">Experience the Future of the 3d Gaming Experience</a>
@@ -252,7 +242,7 @@
 
                 <li class="rec-item">
                   <img src="assets/images/tarcoles-img11.jpg"
-                       alt="río Tárcoles"
+                       alt=" río Tárcoles "
                        class="rec-item__img" loading="lazy" />
                   <div>
                     <a class="rec-item__titulo enlace-falso">Take a Trip to The End of The World</a>
@@ -262,14 +252,15 @@
 
               </ul>
             </div>
-            //fin de post en cuadros de esa barra abajo
 
           </aside>
-          //fin de elementos en la barra lateral
 
         </div>
       </section>
 
     </main>
+
+    
+
   </body>
 </html>
